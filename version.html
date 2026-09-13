@@ -14,10 +14,7 @@
         content="width=device-width, initial-scale=1">
 
   <link rel="stylesheet" href="main.css">
-
-  <link rel="shortcut icon"
-        href="favicon.ico"
-        type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 
   <style>
 
@@ -138,13 +135,34 @@
 
     <header class="history-header">
 
-      <img
-        src="images/apdig.png"
-        alt="Australian Photographic Digital Imaging Guidelines">
+      <picture>
+        <source srcset="images/apdigsml.png" media="(max-width: 640px)">
+        <img
+          src="images/apdig.png"
+          alt="Australian Photographic Digital Imaging Guidelines">
+      </picture>
 
       <h1>APDIG Version History</h1>
 
     </header>
+
+
+    <article class="history-entry">
+
+      <h2>Version 1.9</h2>
+
+      <div class="history-date">13 November 2026</div>
+
+      <p>
+        1. Added DNG (ISO 12234-4:2022) as an ISO-standardised raw format alternative.<br>
+        2. Updated monitor calibration device references and links.<br>
+        3. Replaced optical disc delivery guidance with current cloud and physical media recommendations.<br>
+        4. Updated IPTC metadata guidance to reference Rights Usage Terms, Copyright Notice and Creator fields.<br>
+        5. Updated ReadMe disclaimer to remove optical disc references.<br>
+        6. Updated links.
+      </p>
+
+    </article>
 
 
     <article class="history-entry">
