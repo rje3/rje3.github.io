@@ -618,7 +618,7 @@
 
     <p>
       Please report errors to:
-      <a href="mailto:info@apdig.com">info@apdig.com</a>
+      <a href="#" class="email-link" data-user="info" data-domain="apdig.com"></a>
     </p>
 
   </section>
@@ -689,7 +689,7 @@
 
     <p>
       email:
-      <a href="mailto:info@apdig.com">info@apdig.com</a>
+      <a href="#" class="email-link" data-user="info" data-domain="apdig.com"></a>
     </p>
 
   </section>
@@ -744,5 +744,13 @@
 
 </footer>
 
+  <script>
+document.querySelectorAll('.email-link').forEach(function (link) {
+  const email = link.dataset.user + '@' + link.dataset.domain;
+  link.href = 'mailto:' + email;
+  link.textContent = email;
+});
+</script>
+  
 </body>
 </html>
