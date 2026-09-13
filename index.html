@@ -22,9 +22,7 @@
   <meta property="og:type" content="website">
 </head>
 
-<body>
-
-<a id="top"></a>
+<body id="top">
 
 <header class="site-header">
 
@@ -41,7 +39,7 @@
     </a>
 
     <div class="header-meta">
-      <span>Version 1.8</span>
+      <span>Version 1.9</span>
       <span class="meta-separator">·</span>
       <a href="version.html">Version history</a>
     </div>
@@ -93,7 +91,7 @@
     <details id="1" class="guideline">
 
       <summary>
-        <span class="guideline-number">01</span>
+        <span class="guideline-number">1</span>
         <span class="guideline-title">
           ICC colour-managed environment
         </span>
@@ -103,12 +101,12 @@
       <div class="detail">
 
         <p>
-          The ICC (<a href="http://www.color.org" target="_blank"
+          The ICC (<a href="https://www.color.org" target="_blank"
           rel="noopener">International Color Consortium</a>) specifies
           international standards for colour management. Photographers who
           supply digital files for publishing need to be in an ICC managed
           environment, as do their clients. Your cameras, operating system,
-          software, and output devices all need to be setup for an ICC managed
+          software, and output devices all need to be set up for an ICC managed
           workflow. A detailed description of the ICC workflow is beyond the
           scope of this guide.
         </p>
@@ -123,7 +121,7 @@
     <details id="2" class="guideline">
 
       <summary>
-        <span class="guideline-number">02</span>
+        <span class="guideline-number">2</span>
         <span class="guideline-title">
           Capture digital images in camera's raw format
         </span>
@@ -135,24 +133,26 @@
         <p>
           Most professional digital cameras and backs allow users to record
           images in a raw format. A raw file is essentially a record of the
-          data captured from the camera's imaging sensor without any in-camera
+          data captured from the camera's imaging sensor with minimal in-camera
           processing. By capturing in raw you begin with the highest quality
           file with the most options / flexibility / quality for postproduction.
         </p>
 
         <p>
-          Presently raw formats are proprietary to each camera/back manufacturer
+          Raw formats are generally proprietary to each camera/back manufacturer
           and require processing to a common format such as JPEG or TIFF. There
           are several raw converters including Adobe Photoshop Lightroom and
-          Phase One Capture One, as well as each camera manufacturers own
-          proprietary software.
+          Capture One, as well as each camera manufacturer's own proprietary
+          software. DNG (Digital Negative) is an open, ISO-standardised raw
+          format (ISO 12234-4:2022) supported by most raw converters and an
+          increasingly viable alternative to proprietary formats.
         </p>
 
         <p>
           It is important to note that raw files are not colour managed in any
           way. While these files may appear to contain profiled information,
           colour management strategies and profiles only commence during the
-          conversion from raw to TIFF or JPG.
+          conversion from raw to TIFF or JPEG.
         </p>
 
       </div>
@@ -165,7 +165,7 @@
     <details id="3" class="guideline">
 
       <summary>
-        <span class="guideline-number">03</span>
+        <span class="guideline-number">3</span>
         <span class="guideline-title">
           Calibrate your monitor(s) regularly with a hardware device to the D65 standard and Gamma 2.2
         </span>
@@ -176,18 +176,18 @@
 
         <p>
           Professional photographers need to invest in a quality hardware
-          monitor calibration device such as supplied by X-Rite
-          (<a href="https://www.x-rite.com/" target="_blank"
-          rel="noopener">www.x-rite.com</a>) or Datacolor
+          monitor calibration device such as supplied by Calibrite
+          (<a href="https://www.calibrite.com/" target="_blank"
+          rel="noopener">www.calibrite.com</a>) or Datacolor
           (<a href="https://www.datacolor.com/" target="_blank"
           rel="noopener">www.datacolor.com</a>). The human eye and Adobe Gamma
           (a part of Photoshop) do not permit calibration with high enough
-          precision for professional use. Comuter monitor's colour drifts over
+          precision for professional use. Computer monitors colour drifts over
           time and should be verified regularly.
         </p>
 
         <p>
-          In the past prepress would recommend a Mac use D50 and Gamma 1.8 to
+          In the past, prepress would recommend a Mac use D50 and Gamma 1.8 to
           match the Apple Laserwriter. Today D65 and Gamma 2.2 are becoming the
           common standard for both PC and Mac. If you wish to supply proof
           prints, you will need to extend similar calibration procedures to
@@ -204,7 +204,7 @@
     <details id="4" class="guideline">
 
       <summary>
-        <span class="guideline-number">04</span>
+        <span class="guideline-number">4</span>
         <span class="guideline-title">
           For Prepress use
         </span>
@@ -220,7 +220,7 @@
 
         <p>
           <strong>b.</strong> File format: TIFF uncompressed in Windows byte
-          order, or JPEG at level 12 compression, @ 300 PPI (DPI).
+          order, or JPEG at level 12 compression, at 300 PPI.
         </p>
 
         <p>
@@ -231,9 +231,9 @@
 
         <p>
           Tagged Image File Format (TIFF) is the preferred file format. When
-          saving tiffs in Photoshop you are given options for compression and
+          saving TIFFs in Photoshop you are given options for compression and
           byte order. For maximum compatibility, TIFFs should be saved with
-          8-bit, uncompressed options in Windows byte-order. Tiffs can also be
+          8-bit, uncompressed options in Windows byte-order. TIFFs can also be
           supplied in 16 bit which doubles the file size but allows for more
           aggressive tonal editing. To capture 16 bit images may require
           shooting in the cameras' raw format, sometimes referred to as a
@@ -242,7 +242,7 @@
         </p>
 
         <p>
-          Sharpening is best done in stages. A `light', initial sharpen is
+          Sharpening is best done in stages. A &#8216;light&#8217;, initial sharpen is
           often performed on an image to overcome the softness inherited from
           capture devices such as digital cameras and scanners. Final
           sharpening should only be performed after all editing and resizing
@@ -265,9 +265,9 @@
     <details id="5" class="guideline">
 
       <summary>
-        <span class="guideline-number">05</span>
+        <span class="guideline-number">5</span>
         <span class="guideline-title">
-          Deliver files via cloud services or SSD
+          Deliver files via cloud services or on SSD
         </span>
         <span class="guideline-toggle" aria-hidden="true"></span>
       </summary>
@@ -275,23 +275,21 @@
       <div class="detail">
 
         <p>
-          Optical discs were the preferred method of delivery however as image
-          resolution and file sizes have increased delivery via cloud services,
-          USB flash drive, SSD or portable hard drives are now more common.
-          Format and label the drive for the client computer system, i.e.,
-          FAT32, Mac HFS or Windows NTFS. Write optical discs using the ISO
-          9660 format to maintain compatibility across platforms. Close disc
-          sessions so no more data can be written. A relaxed ISO 9660 standard
-          is also common but check with your client. Label the disc with a
-          meaningful title that the computer can pick up and display.
+          Cloud services are now the preferred method of delivery for most
+          workflows, with physical media such as USB flash drives, SSDs, and
+          portable hard drives as a practical alternative for large volumes or
+          where internet delivery is not feasible. When delivering on physical
+          media, format drives as exFAT for maximum cross-platform compatibility
+          between Mac and Windows, or NTFS if delivering to Windows clients only.
         </p>
 
         <p>
-          For archival purposes we recommend marking discs only with pens that
-          are designed for the purpose. The safest place to write on a disc is
-          on the small clear hub. Adhesive paper labels should be avoided as
-          they could come loose in an optical disc drive, and may also cause a
-          disc to become unbalanced and unreadable.
+          When naming drives, folders, and files, avoid spaces and special
+          characters &#8212; use hyphens or underscores instead. Characters
+          that are illegal on Windows (/ \ : * ? &#34; &lt; &gt; |) will cause
+          problems when clients open files on a different platform than the one
+          they were created on, even if they appeared to work correctly on the
+          originating system.
         </p>
 
       </div>
@@ -318,7 +316,7 @@
     <details id="6" class="guideline">
 
       <summary>
-        <span class="guideline-number">06</span>
+        <span class="guideline-number">6</span>
         <span class="guideline-title">
           For Web use
         </span>
@@ -336,10 +334,9 @@
         </p>
 
         <p>
-          For internet use sRGB is the standard colour space, although the
-          most common web browsers are not colour managed. Colour profiles
-          and other metadata add to file size and may not be useful for web
-          use.
+          For internet use, sRGB remains the standard colour space and the
+          safest choice for broad compatibility across browsers and uncalibrated
+          displays.
         </p>
 
       </div>
@@ -352,7 +349,7 @@
     <details id="7" class="guideline">
 
       <summary>
-        <span class="guideline-number">07</span>
+        <span class="guideline-number">7</span>
         <span class="guideline-title">
           Converting to CMYK
         </span>
@@ -373,16 +370,16 @@
 
         <p>
           <strong>c.</strong> File format: TIFF uncompressed in Windows byte
-          order, or JPEG at level 12 compression, @ 300 PPI (DPI). Sized to
+          order, or JPEG at level 12 compression, at 300 PPI. Sized to
           final art with final sharpening.
         </p>
 
         <p>
-          Every digital camera &amp; scanner is a RGB (Red, Green, Blue)
+          Every digital camera &amp; scanner is an RGB (Red, Green, Blue)
           device, so without exception all images start off as RGB. Most
           printing processes use CMYK (Cyan, Magenta, Yellow, Black) inks
           (sometimes adding additional ink colours). This means somewhere
-          in the imaging chain there will need to be a RGB to CMYK conversion.
+          in the imaging chain there will need to be an RGB to CMYK conversion.
           There are many ways to perform this conversion, but only one way
           to do it correctly.
         </p>
@@ -391,20 +388,17 @@
           We suggest you convert from RGB to CMYK using Standards Australia
           &amp; International Organization for Standardization standard
           profiles (<a
-          href="http://www.iso.org/iso/catalogue_detail.htm?csnumber=37880"
+          href="https://www.iso.org/iso/catalogue_detail.htm?csnumber=37880"
           target="_blank" rel="noopener">AS/ISO 12647-2</a>).
-          Profiles may be downloaded from
-          <a href="http://www.eci.org/en/start" target="_blank"
-          rel="noopener">www.eci.org/en/start</a>. If you are unsure which
-          ICC profile to use for offset printing, we recommended you use
-          ISO Coated v2 300% (ECI).
+          If you are unsure which ICC profile to use for offset printing,
+          we recommend you use ISO Coated v2 300% (ECI).
         </p>
 
         <p>
           CMYK conversion usually occurs at the end of the workflow and is
           device dependent. Each press / inkset / media combination has
           different characteristics requiring a specific colour conversion /
-          ICC profile. There is no such thing as a "Generic CMYK" colour
+          ICC profile. There is no such thing as a &#8220;Generic CMYK&#8221; colour
           space. Do NOT convert from RGB to CMYK until you know which
           device/process you are printing to &amp; which CMYK conversion /
           profile to use. As CMYK colour spaces are much smaller than RGB,
@@ -418,7 +412,7 @@
           any liability they expose themselves to and should include a
           disclaimer (see <a href="#11">point <sup>11</sup></a>). As with
           RGB delivery, for maximum compatibility CMYK TIFFs or JPEGs should
-          saved as 8-bit, uncompressed and in Windows byte order.
+          be saved as 8-bit, uncompressed and in Windows byte order.
         </p>
 
       </div>
@@ -431,7 +425,7 @@
     <details id="8" class="guideline">
 
       <summary>
-        <span class="guideline-number">08</span>
+        <span class="guideline-number">8</span>
         <span class="guideline-title">
           For printing to colour-managed lab
         </span>
@@ -442,7 +436,7 @@
 
         <p>
           <strong>a.</strong> Ask your photo lab for their normal file
-          specifications (eg: Adobe RGB, JPG, 300ppi).
+          specifications (eg: Adobe RGB, JPG, 300 PPI).
         </p>
 
         <p>
@@ -451,7 +445,7 @@
         </p>
 
         <p>
-          <strong>c.</strong> Do NOT "Convert To" or apply the profile
+          <strong>c.</strong> Do NOT &#8220;Convert To&#8221; or apply the profile
           (send to lab in standard colour space like Adobe RGB 1998).
         </p>
 
@@ -460,8 +454,8 @@
         </p>
 
         <p>
-          <strong>e.</strong> If uploading convert to JPEG. Or send TIFF
-          on CD.
+          <strong>e.</strong> If uploading, convert to JPEG. Or deliver TIFF
+          files on physical media.
         </p>
 
         <p>
@@ -483,7 +477,7 @@
     <details id="9" class="guideline">
 
       <summary>
-        <span class="guideline-number">09</span>
+        <span class="guideline-number">9</span>
         <span class="guideline-title">
           Make sure the client is viewing the files on a monitor profiled to the international standard D65
         </span>
@@ -519,14 +513,16 @@
       <div class="detail">
 
         <p>
-          IPTC (International Press Telecommunications Council) has
+          IPTC (<a href="https://www.iptc.org" target="_blank"
+          rel="noopener">International Press Telecommunications Council</a>) has
           established standards for metadata attached to files describing
           what the file is. It can include information about copyright,
-          photographer (author), date, captions and more. Most important
-          to photographers is copyright, and usage - which may be entered
-          into the 'caption' or 'special instructions' fields. Several
-          applications can write metadata including Adobe Photoshop. IPTC
-          information is viewable in Photoshop under File -&gt; File Info.
+          photographer (author), date and captions. Most important to
+          photographers are the Rights Usage Terms field which specifies
+          how the image may be used and the Copyright Notice and Creator
+          fields. Several applications can read and write metadata, including
+          Adobe Photoshop, Lightroom and Capture One. IPTC information is
+          viewable in Photoshop under File &#8594; File Info.
         </p>
 
       </div>
@@ -556,7 +552,7 @@
 
         <ol>
           <li>
-            On this disc you will find "our product".
+            Included with this delivery you will find &#8220;our product&#8221;.
           </li>
 
           <li>
@@ -573,15 +569,15 @@
           </li>
 
           <li>
-            Any prints supplied with the disc should be used as a guide only.
-            They are intended for identifying files, assessing expressions,
-            composition, etc and not for evaluating colour accuracy. They
-            are NOT contract proofs unless identified as such.
+            Any prints supplied should be used as a guide only. They are
+            intended for identifying files, assessing expressions, composition,
+            etc and not for evaluating colour accuracy. They are NOT contract
+            proofs unless identified as such.
           </li>
 
           <li>
-            All files on this CD should be scanned for viruses, file integrity
-            verified then backed up. We will not be held liable for any loss.
+            All files should be scanned for viruses, file integrity verified
+            then backed up. We will not be held liable for any loss.
           </li>
         </ol>
 
@@ -708,22 +704,12 @@
     <h2>Endorsed by</h2>
 
     <p>
-      <a href="https://www.imagemakersassociation.com.au"
-         target="_blank"
-         rel="noopener">
-        IMAA</a>
+      <a href="https://www.imagemakersassociation.com.au" target="_blank" rel="noopener">IMAA</a>
       (Image Makers Association Australia)<br>
-
-<a href="https://picaus.au"
-         target="_blank"
-         rel="noopener">
-      AIPP</a>
-(Australian Institute of Professional Photography)<br>
-
+      <a href="https://picaus.au" target="_blank" rel="noopener">AIPP</a>
+      (Australian Institute of Professional Photography)<br>
       ACMP (Association of Australian Commercial + Media Photographers)<br>
-
       IDEA (Imaging &amp; Digital Entertainment Association)<br>
-
       APCI (Association of Professional Color Imagers)
     </p>
 
